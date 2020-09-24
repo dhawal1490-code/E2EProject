@@ -3,7 +3,8 @@
 <suite name="Suite" parallel="tests">
   <test name="Test">
     <classes>
-      <class name="Labworks.E2EProject.LoginPageTest"/>
+      <class name="Labworks.E2EProject.HomePage"/>
+      <class name="Labworks.E2EProject.rahulShettyPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

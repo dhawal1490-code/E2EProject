@@ -27,7 +27,9 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult arg0) {
 		// TODO Auto-generated method stub
-		
+		//File SrcFile= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//FileUtils.copyFile(SrcFile, DestPath);
+	
 	}
 
 	@Override
