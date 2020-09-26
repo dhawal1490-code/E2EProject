@@ -9,12 +9,36 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import pajeobjects.LoginPage;
 
 public class base {
-	
+
 	public WebDriver driver;
 	public Properties prop;
+	public WebDriverWait wait;	
+
+	@BeforeTest
+	public void initialize() throws IOException{
+		driver= initializeDriver();
+		driver.get(prop.getProperty("url"));
+		driver.manage().window().maximize();
+		wait = new WebDriverWait(driver, 15);
+
+		LoginPage l= new LoginPage(driver,wait);
+		l.emailID().sendKeys("dhawal.mokashi");
+		l.password().sendKeys("gunman14");
+		l.login().click();
+
+	}
 	
+	@AfterTest
+	public void tearDown(){
+		driver.quit();
+	}
+
 	public WebDriver initializeDriver() throws IOException{
 		
 		prop = new Properties();

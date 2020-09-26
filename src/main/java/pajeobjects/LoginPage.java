@@ -16,15 +16,15 @@ public class LoginPage {
 		this.wait = wait;
 	}
 	
-	By emailid = By.id("user_email");
-	By password = By.id("user_password");
-	By login = By.cssSelector("input[value='Log In']");
+	By username = By.name("username");
+	By password = By.name("password");
+	By login = By.cssSelector("button[type='submit']");
 	By title = By.xpath("/html/body/div/header/nav/div/ul/li/a/span");
 	
 	
 	public WebElement emailID(){
-		wait.until(ExpectedConditions.visibilityOfElementLocated(emailid));
-		return driver.findElement(emailid);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(username));
+		return driver.findElement(username);
 	}
 	
 	public WebElement password(){
@@ -32,6 +32,7 @@ public class LoginPage {
 	}
 
 	public WebElement login(){
+		wait.until(ExpectedConditions.elementToBeClickable(login));
 		return driver.findElement(login);
 	}
 

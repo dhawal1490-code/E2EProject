@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="Test2(failed)">
     <classes>
-      <class name="Labworks.E2EProject.LoginPageTest">
+      <class name="Labworks.E2EProject.InstagramTest2">
         <methods>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-          <include name="initialize"/>
+          <include name="getwordpormdata"/>
         </methods>
-      </class> <!-- Labworks.E2EProject.LoginPageTest -->
-      <class name="Labworks.E2EProject.HomePage">
+      </class> <!-- Labworks.E2EProject.InstagramTest2 -->
+      <class name="Labworks.E2EProject.InstagramTest1">
         <methods>
           <include name="tearDown"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- Labworks.E2EProject.HomePage -->
+      </class> <!-- Labworks.E2EProject.InstagramTest1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

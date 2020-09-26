@@ -1,93 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="132201" started-at="2020-09-22T11:08:17Z" finished-at="2020-09-22T11:10:29Z">
+  <suite name="Suite" duration-ms="115496" started-at="2020-09-26T20:21:38Z" finished-at="2020-09-26T20:23:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="132201" started-at="2020-09-22T11:08:17Z" finished-at="2020-09-22T11:10:29Z">
-      <class name="Labworks.E2EProject.rahulShettyPageTest">
-        <test-method status="SKIP" signature="testControls()[pri:0, instance:Labworks.E2EProject.rahulShettyPageTest@79924b]" name="testControls" duration-ms="10" started-at="2020-09-22T16:40:29Z" finished-at="2020-09-22T16:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testControls -->
-      </class> <!-- Labworks.E2EProject.rahulShettyPageTest -->
-      <class name="Labworks.E2EProject.HomePage">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Labworks.E2EProject.HomePage@7b9a4292]" name="initialize" is-config="true" duration-ms="106772" started-at="2020-09-22T16:38:17Z" finished-at="2020-09-22T16:40:04Z">
+    <test name="Test1" duration-ms="114428" started-at="2020-09-26T20:21:38Z" finished-at="2020-09-26T20:23:33Z">
+      <class name="Labworks.E2EProject.InstagramTest1">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Labworks.E2EProject.InstagramTest1@cc285f4]" name="initialize" is-config="true" duration-ms="31285" started-at="2020-09-27T01:51:38Z" finished-at="2020-09-27T01:52:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="initialize()[pri:0, instance:Labworks.E2EProject.rahulShettyPageTest@79924b]" name="initialize" is-config="true" duration-ms="0" started-at="2020-09-22T16:40:04Z" finished-at="2020-09-22T16:40:04Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DELL', ip: '10.222.10.26', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_261'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DELL', ip: '10.222.10.26', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_261'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at Labworks.E2EProject.base.initializeDriver(base.java:28)
-	at Labworks.E2EProject.rahulShettyPageTest.initialize(rahulShettyPageTest.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:631)
-	at org.testng.TestRunner.run(TestRunner.java:599)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:24541/status] to be available after 20009 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 33 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="getscribblestoriesdata()[pri:0, instance:Labworks.E2EProject.InstagramTest1@cc285f4]" name="getscribblestoriesdata" duration-ms="69760" started-at="2020-09-27T01:52:10Z" finished-at="2020-09-27T01:53:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="SKIP" signature="basePageNavigation()[pri:0, instance:Labworks.E2EProject.HomePage@7b9a4292]" name="basePageNavigation" duration-ms="4" started-at="2020-09-22T16:40:29Z" finished-at="2020-09-22T16:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:Labworks.E2EProject.HomePage@7b9a4292]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-22T16:40:29Z" finished-at="2020-09-22T16:40:29Z">
+        </test-method> <!-- getscribblestoriesdata -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Labworks.E2EProject.InstagramTest1@cc285f4]" name="tearDown" is-config="true" duration-ms="13331" started-at="2020-09-27T01:53:19Z" finished-at="2020-09-27T01:53:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Labworks.E2EProject.HomePage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Labworks.E2EProject.InstagramTest1 -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="115496" started-at="2020-09-26T20:21:38Z" finished-at="2020-09-26T20:23:34Z">
+      <class name="Labworks.E2EProject.InstagramTest2">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Labworks.E2EProject.InstagramTest2@6f7fd0e6]" name="initialize" is-config="true" duration-ms="31304" started-at="2020-09-27T01:51:38Z" finished-at="2020-09-27T01:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="getwordpormdata()[pri:0, instance:Labworks.E2EProject.InstagramTest2@6f7fd0e6]" name="getwordpormdata" duration-ms="70108" started-at="2020-09-27T01:52:10Z" finished-at="2020-09-27T01:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getwordpormdata -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Labworks.E2EProject.InstagramTest2@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="14053" started-at="2020-09-27T01:53:20Z" finished-at="2020-09-27T01:53:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Labworks.E2EProject.InstagramTest2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
